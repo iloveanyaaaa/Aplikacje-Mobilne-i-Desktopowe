@@ -43,9 +43,9 @@ public class Main {
     public static void main(String[] args) {
 
         List<Product> produkty = new ArrayList<>();
-        produkty.add(new Product("Produkt 1", 19.99, 10));
-        produkty.add(new Product("Produkt 2", 29.99, 5));
-        produkty.add(new Product("Produkt 3", 49.99, 15));
+        produkty.add(new Product("Produkt 1", 50, 5));
+        produkty.add(new Product("Produkt 2", 40, 5));
+        produkty.add(new Product("Produkt 3", 30, 5));
 
         ProductTableModel model = new ProductTableModel(produkty);
 
