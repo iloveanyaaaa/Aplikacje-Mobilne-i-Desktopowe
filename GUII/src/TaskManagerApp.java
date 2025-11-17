@@ -11,7 +11,7 @@ public class TaskManagerApp {
     private void createAndShowGUI() {
         JFrame frame = new JFrame("To do list AM (Menedżer zadań)");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(700, 400);
+        frame.setSize(500, 150);
 
         List<Task> lista = new ArrayList<>();
         lista.add(new Task("Odrobienie lekcji", false, "Średni"));
