@@ -24,8 +24,16 @@ public class KwadratView extends JFrame {
     }
 
     public int getLiczba() {
+        try {
             int liczba = Integer.parseInt(liczbaTextField.getText());
+            if (liczba <= 0) {
+                throw new NumberFormatException();
+            }
             return liczba;
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "wprowadź liczbę która jest większa niż 0", "Błąd", JOptionPane.ERROR_MESSAGE);
+            return 0;
+        }
     }
 
     public void addObliczListener(ActionListener listener) {

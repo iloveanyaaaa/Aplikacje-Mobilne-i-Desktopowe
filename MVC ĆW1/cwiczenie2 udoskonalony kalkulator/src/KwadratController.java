@@ -19,8 +19,12 @@ public class KwadratController {
 
             int liczba = view.getLiczba();
 
+            if (liczba == 0) {
+                JOptionPane.showMessageDialog(view, "wprowadź liczbę która jest większa niż 0", "Błąd", JOptionPane.ERROR_MESSAGE);
+            } else {
                 int wynik = model.obliczKwadrat(liczba);
                 view.setWynik(wynik);
+            }
         }
     }
 }
